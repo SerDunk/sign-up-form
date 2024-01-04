@@ -22,18 +22,24 @@
             <div class="form">
                 <h2>Dev Up</h2>
                 <form action="">
-                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <input type="text" id="name" name="name" placeholder="Name" minlength='3' required autocomplete="on">
 
-                        <input type="email" id="user-email" name="user-email" placeholder="Email" required>
+                        <input type="email" id="user-email" name="user-email" placeholder="Email" required autocomplete="on">
 
-                        <input type="password" id="pass" name="pass" placeholder="Password" required>
+                        <input type="password" id="pass" name="pass" placeholder="Password" minlength='8' required >
 
-                        <input type="password" id="confirm-pass" name="confirm-pass" placeholder="Confirm Password" required>
+                        <input type="password" id="confirm-pass" name="confirm-pass" placeholder="Confirm Password"  required>
+
+                        <div class="message msg-no-display">Passwords Do Not Match</div>
                     
                         <button type="submit">Sign Up</button>
                 </form>
             </div>
         </div>
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
